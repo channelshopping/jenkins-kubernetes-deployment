@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/channelshopping/jenkins-kubernetes-deployment.git'
+        git branch: 'main', credentialsId: '3694887a-ed15-43b6-a9be-a3419d37996b', url:'https://github.com/channelshopping/jenkins-kubernetes-deployment.git'
       }
     }
 
